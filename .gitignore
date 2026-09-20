@@ -1,0 +1,16 @@
+# Dependencies / build output
+node_modules/
+__pycache__/
+*.pyc
+*.class
+
+# Local archives
+*.zip
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.tmp
+
+# Internal markers (not part of the published expert)
+.created-by-session

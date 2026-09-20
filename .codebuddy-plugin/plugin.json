@@ -1,0 +1,113 @@
+{
+  "name": "dev-expert-alliance",
+  "version": "1.0.0",
+  "description": "Six-specialist software R&D alliance covering architecture, backend, frontend, data, QA and security for full-dimension analysis, fix, verification and optimization.",
+  "author": {
+    "name": "ymkj dev",
+    "email": "dev@ymkj.local"
+  },
+  "agents": [
+    "./agents/dev-expert-alliance-team-lead.md",
+    "./agents/arch-blueprint.md",
+    "./agents/backend-engine.md",
+    "./agents/frontend-canvas.md",
+    "./agents/data-steward.md",
+    "./agents/qa-gatekeeper.md",
+    "./agents/sec-sentinel.md"
+  ],
+
+  "expertType": "team",
+  "agentName": "dev-expert-alliance-team-lead",
+  "teamInfo": {
+    "leadAgent": "dev-expert-alliance-team-lead",
+    "memberAgents": [
+      "arch-blueprint",
+      "backend-engine",
+      "frontend-canvas",
+      "data-steward",
+      "qa-gatekeeper",
+      "sec-sentinel"
+    ]
+  },
+
+  "displayName": {
+    "en": "Dev Expert Alliance",
+    "zh": "开发专家联盟"
+  },
+  "profession": {
+    "en": "Dev Expert Alliance",
+    "zh": "开发专家联盟"
+  },
+  "displayDescription": {
+    "en": "A six-specialist software R&D alliance covering architecture, backend, frontend, data, QA and security, delivering full-dimension analysis, fix, verification and optimization through a standard multi-phase SOP.",
+    "zh": "覆盖架构、后端、前端、数据、测试、安全六维的研发专家团，按标准协作流程完成全维分析、修复与验证。"
+  },
+  "avatar": "avatars/team.png",
+  "categoryId": "02-Engineering",
+  "defaultInitPrompt": {
+    "zh": "对当前仓库做一次全维分析、修复、验证与优化",
+    "en": "Run a full-dimension analysis, fix, verification and optimization pass on the current repository"
+  },
+  "plugin": "dev-expert-alliance",
+  "tags": [
+    { "en": "Full-Stack R&D", "zh": "研发全栈" },
+    { "en": "Code Audit", "zh": "代码审计" },
+    { "en": "Quality & Security", "zh": "质量与安全" }
+  ],
+  "quickPrompts": [
+    { "en": "Run a full-dimension analysis, fix, verification and optimization pass on the current repository", "zh": "对当前仓库做一次全维分析、修复、验证与优化" },
+    { "en": "Audit this repository across architecture, backend, frontend, data, QA and security and produce a problem ledger", "zh": "从架构、后端、前端、数据、测试、安全六个维度审计本仓库并输出问题台账" },
+    { "en": "Locate and fix high-risk defects in this repository with reproducible verification evidence", "zh": "定位并修复本仓库的高危缺陷，并给出可复现的验证证据" }
+  ],
+  "members": [
+    {
+      "id": "dev-expert-alliance-team-lead",
+      "displayName": { "en": "Qi", "zh": "齐活林" },
+      "profession": { "en": "Delivery Director", "zh": "交付总监" },
+      "avatar": "avatars/dev-expert-alliance-team-lead.png",
+      "role": "lead"
+    },
+    {
+      "id": "arch-blueprint",
+      "displayName": { "en": "Gao", "zh": "高见远" },
+      "profession": { "en": "Software Architect", "zh": "架构师" },
+      "avatar": "avatars/arch-blueprint.png",
+      "role": "member"
+    },
+    {
+      "id": "backend-engine",
+      "displayName": { "en": "Kou", "zh": "寇豆码" },
+      "profession": { "en": "Backend Engineer", "zh": "后端工程师" },
+      "avatar": "avatars/backend-engine.png",
+      "role": "member"
+    },
+    {
+      "id": "frontend-canvas",
+      "displayName": { "en": "Zhen", "zh": "甄界面" },
+      "profession": { "en": "Frontend Engineer", "zh": "前端工程师" },
+      "avatar": "avatars/frontend-canvas.png",
+      "role": "member"
+    },
+    {
+      "id": "data-steward",
+      "displayName": { "en": "Chen", "zh": "陈数仓" },
+      "profession": { "en": "Data Architect", "zh": "数据架构师" },
+      "avatar": "avatars/data-steward.png",
+      "role": "member"
+    },
+    {
+      "id": "qa-gatekeeper",
+      "displayName": { "en": "Yan", "zh": "严过关" },
+      "profession": { "en": "QA Gatekeeper", "zh": "质量门禁官" },
+      "avatar": "avatars/qa-gatekeeper.png",
+      "role": "member"
+    },
+    {
+      "id": "sec-sentinel",
+      "displayName": { "en": "An", "zh": "安如山" },
+      "profession": { "en": "Security Auditor", "zh": "安全审计官" },
+      "avatar": "avatars/sec-sentinel.png",
+      "role": "member"
+    }
+  ]
+}
