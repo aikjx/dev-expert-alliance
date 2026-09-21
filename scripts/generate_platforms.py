@@ -3,7 +3,7 @@
 """
 Dev Expert Alliance — 多平台成员定义生成器
 ==========================================
-读取 WorkBuddy 原生 agents/*.md（主理人 + 6 名成员），产出其他平台的成员定义：
+读取 WorkBuddy 原生 agents/*.md（主理人 + 7 名成员），产出其他平台的成员定义：
   - platforms/claude/.claude/agents/<name>.md      (Claude Code 子代理)
   - platforms/trae/.trae/agents/<name>.md          (Trae 自定义代理)
   - platforms/harness/agents/<name>.yaml           (Harness Worker Agent)
@@ -26,6 +26,7 @@ MEMBERS = [
     "data-steward",
     "qa-gatekeeper",
     "sec-sentinel",
+    "product-design",
 ]
 
 

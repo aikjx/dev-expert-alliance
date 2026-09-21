@@ -1,7 +1,7 @@
 {
   "name": "dev-expert-alliance",
-  "version": "1.1.0",
-  "description": "Six-specialist software R&D alliance covering architecture, backend, frontend, data, QA and security for full-dimension analysis, fix, verification and optimization.",
+  "version": "1.2.0",
+  "description": "Seven-specialist software R&D alliance covering product & design, architecture, backend, frontend, data, QA and security for requirement assessment, full-dimension analysis, fix, verification and optimization.",
   "author": {
     "name": "ymkj dev",
     "email": "dev@ymkj.local"
@@ -13,7 +13,8 @@
     "./agents/frontend-canvas.md",
     "./agents/data-steward.md",
     "./agents/qa-gatekeeper.md",
-    "./agents/sec-sentinel.md"
+    "./agents/sec-sentinel.md",
+    "./agents/product-design.md"
   ],
 
   "expertType": "team",
@@ -26,7 +27,8 @@
       "frontend-canvas",
       "data-steward",
       "qa-gatekeeper",
-      "sec-sentinel"
+      "sec-sentinel",
+      "product-design"
     ]
   },
 
@@ -39,8 +41,8 @@
     "zh": "开发专家联盟"
   },
   "displayDescription": {
-    "en": "A six-specialist software R&D alliance covering architecture, backend, frontend, data, QA and security, delivering full-dimension analysis, fix, verification and optimization through a standard multi-phase SOP.",
-    "zh": "覆盖架构、后端、前端、数据、测试、安全六维的研发专家团，按标准协作流程完成全维分析、修复与验证。"
+    "en": "A seven-specialist software R&D alliance covering product & design, architecture, backend, frontend, data, QA and security, delivering requirement assessment, full-dimension analysis, fix, verification and optimization through a standard multi-phase SOP.",
+    "zh": "覆盖产品与设计、架构、后端、前端、数据、测试、安全七维的研发专家团，按标准协作流程完成需求研判、全维分析、修复与验证。"
   },
   "avatar": "avatars/team.png",
   "categoryId": "02-Engineering",
@@ -107,6 +109,13 @@
       "displayName": { "en": "An", "zh": "安如山" },
       "profession": { "en": "Security Auditor", "zh": "安全审计官" },
       "avatar": "avatars/sec-sentinel.png",
+      "role": "member"
+    },
+    {
+      "id": "product-design",
+      "displayName": { "en": "She", "zh": "设身处" },
+      "profession": { "en": "Product & Design Strategist", "zh": "产品设计师" },
+      "avatar": "avatars/product-design.png",
       "role": "member"
     }
   ]
