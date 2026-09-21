@@ -33,6 +33,20 @@ Team 型（多角色协作团队）
 - 从架构、后端、前端、数据、测试、安全六个维度审计本仓库并输出问题台账
 - 定位并修复本仓库的高危缺陷，并给出可复现的验证证据
 
+## 多平台支持
+
+同一套「开发专家联盟」已适配多个 AI 研发平台，专业内容与 SOP 完全一致，仅运行时形态不同：
+
+| 平台 | 形态 | 专家运行时 | 入口文件 | 说明 |
+|------|------|-----------|----------|------|
+| WorkBuddy | Team 型专家团 | 原生 Agent | `.codebuddy-plugin/plugin.json` | 当前仓库即 WorkBuddy 原生包（见下方「安装」） |
+| Claude | 子代理 + 项目指引 | Claude Code subagent | `platforms/claude/CLAUDE.md` + `.claude/agents/` | [详情](platforms/claude/README.md) |
+| OpenAI | Agents SDK / Custom GPT | OpenAI Agents | `platforms/openai/alliance.py` / `GPT_INSTRUCTIONS.md` | [详情](platforms/openai/README.md) |
+| Trae | AGENTS.md + Rules + Agents | Trae agent | `platforms/trae/AGENTS.md` + `.trae/` | [详情](platforms/trae/README.md) |
+| Harness | Worker Agent (YAML) | Harness AI Agent | `platforms/harness/agents/*.yaml` | [详情](platforms/harness/README.md) |
+
+> 跨平台成员定义由 `scripts/generate_platforms.py` 从 `agents/*.md` 自动生成，保证五套平台内容一致、可一键再生。
+
 ## 安装（WorkBuddy）
 
 **方式一：从源码安装**
@@ -59,10 +73,16 @@ python3 scripts/register_expert.py "$HOME/.workbuddy/plugins/marketplaces/my-exp
 
 ```
 dev-expert-alliance/
-├── .codebuddy-plugin/plugin.json   # 专家包元信息（展示字段、成员、SOP 引用）
-├── agents/                         # 主理人 + 6 名团员的角色定义（含 SOP、输出规范）
+├── .codebuddy-plugin/plugin.json   # WorkBuddy 专家包元信息（展示字段、成员、SOP 引用）
+├── agents/                         # 主理人 + 6 名团员的角色定义（WorkBuddy 原生，跨平台内容源）
 ├── avatars/                        # 团队与成员头像
 ├── settings.json                   # Team 入口声明（指向主理人 Agent）
+├── platforms/                      # 跨平台适配
+│   ├── claude/                     #   CLAUDE.md + .claude/agents/
+│   ├── openai/                     #   alliance.py (Agents SDK) + GPT_INSTRUCTIONS.md + specialists.py
+│   ├── trae/                       #   AGENTS.md + .trae/rules/ + .trae/agents/
+│   └── harness/                    #   agents/*.yaml (Worker Agent)
+├── scripts/                        # generate_platforms.py（成员定义生成器）
 ├── README.md
 ├── LICENSE
 └── .gitignore
