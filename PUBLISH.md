@@ -1,6 +1,9 @@
 # 发布指南 / Publish Guide
 
-本仓库已是一个干净的 Git 仓库（首次提交，20 个文件，含 MIT 许可证与 `.gitignore`）。
+> 本仓库已发布：**https://github.com/aikjx/dev-expert-alliance**（公开仓库，默认分支 `main`）。
+> 下面步骤适用于首次发布，或你把它 fork / 迁移到其他账号时复用。
+
+本仓库是一个干净的 Git 仓库（含 MIT 许可证与 `.gitignore`）。
 要将其发布为 GitHub 公开仓库，只需完成下面三步。
 
 ## 1. 在 GitHub 上创建空仓库
@@ -14,6 +17,8 @@
 创建后会得到一个地址，形如：
 `https://github.com/<你的用户名>/dev-expert-alliance.git`
 
+（本仓库实际发布地址：`https://github.com/aikjx/dev-expert-alliance.git`）
+
 ## 2. 关联远程仓库并推送
 
 在本仓库根目录（`dev-expert-alliance/`）执行：
@@ -26,6 +31,8 @@ git push -u origin main
 
 若使用 SSH 密钥，可将地址替换为：
 `git@github.com:<你的用户名>/dev-expert-alliance.git`
+
+（本仓库已配置远程 `origin` 指向 `https://github.com/aikjx/dev-expert-alliance.git`，直接 `git push` 即可。）
 
 ## 3. 验证
 
